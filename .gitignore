@@ -1,52 +1,49 @@
-# Prerequisites
-*.d
+#include <studio.h>
+#include <string.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#define MAX_STUDENTS
+struct student{
+char name[50];
+int age;
+float gpa;
+};
+int main(){
+struct student roaster[MAX_STUDENTS];
+int num_students=0;
+char_search_name[50];
+printf("Enter the information about studentds :\n");
+for(int i=0; i<MAX_STUDENTS; i++){
+printf("Students %d:\n",i+!);
+printf("Name: ");
+fgets(roaster[i].name,50,stdin);
+strtok(roaster[i].name,"\n");
+if(strcmp(roaster[i].name,"done")==0){
+break;
+}
+printf("Age: ");
+scanf("%d",%roaster[i].age);
+printf("GPA: ");
+scanf("%f",&roaster[i].gpa);
+getchar();
+num_students++;
+}
+printf("Enter a name to search for: ");
+fgets(search_name, SO, stdin);
+strtok(search_name, "\n");
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+intfound=0;
+for(int=0;i<sum_students;i++){
+if (strcmp(roaster[i].name,search_name)==0){
+printf("Student has been found! :\n");
+printf("Name: %s\n", roaster[i].name);
+printf("Age:%d\n", roaster[i].gpa);
+found=1;
+break;
+}
+}
+if(!found)
+{
+printf("Student not found: \n");
+}
+return 0:
+}
